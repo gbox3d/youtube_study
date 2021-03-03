@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+
+    <body>
+        <h1>hello world!!</h1>
+
+        <div id="test-text" > hello </div>
+
+        <button id='test-btn'> test </button>
+
+        <script>
+
+            console.log('hello')
+
+            let _dom = document.querySelector('#test-text')
+
+            let _btn = document.querySelector('#test-btn')
+            _btn.addEventListener('click',function() {
+
+                console.log('click')
+                _dom.innerText = 'wolrd'
+
+            })
+
+
+
+        </script>
+
+    </body>
+
+</html>

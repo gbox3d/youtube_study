@@ -1,0 +1,48 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+
+        <div>
+            <div>
+                소원을 입력하세요.
+                <div>
+                    <input id="your_wish">
+                </div>
+                
+            </div>
+
+
+            <div>
+                <button id='btn-ok' > 입력 </button>
+            </div>
+        </div>
+
+        <script>
+
+            document.querySelector('#btn-ok').addEventListener('click',()=>{
+                //...todo...
+                console.log('click')
+                let _wish = document.querySelector('#your_wish').value;
+                console.log(_wish);
+                console.log(  Math.round(Math.random() * 21) )
+
+                let card_1 = Math.round(Math.random() * 21)
+                let card_2 = Math.round(Math.random() * 21)
+                let card_3 = Math.round(Math.random() * 21)
+
+                console.log(card_1,card_2,card_3)
+
+
+                // console.log(  Math.round(22) )
+
+            })
+
+
+        </script>
+
+    </body>
+
+</html>

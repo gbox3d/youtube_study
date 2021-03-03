@@ -1,0 +1,42 @@
+<html>
+
+<head>
+
+    <script src='../fabric.js'></script>
+
+</head>
+
+<body>
+
+    <canvas id='mainCanvas' width='512' height="512">
+    </canvas>
+
+    <script>
+        console.log(fabric.version)
+        let fbCanvas = new fabric.Canvas('mainCanvas', {
+            backgroundColor: '#a278ff',
+            enableRetinaScaling: false //레티나 비활성화
+        })
+
+        let _rect = new fabric.Rect({
+            left : 100,
+            top : 100,
+            fill : '#ff0000',
+            width : 128,
+            height : 128,
+            selectable: false
+        })
+        fbCanvas.add(_rect)
+
+        fabric.Image.fromURL('../tarocard/emperor.jpg',(_obj)=> {
+
+            fbCanvas.add(_obj)
+
+        })
+        
+
+    </script>
+
+</body>
+
+</html>
